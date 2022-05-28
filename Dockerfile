@@ -72,4 +72,4 @@ RUN steamcmd \
     +quit
 
 # Here we gooooooooooooo!
-CMD xvfb-run --auto-servernum --server-args='-screen 0 640x480x24:32' wine VRisingServer.exe -persistentDataPath ./save-data -logFile server.log
+CMD xvfb-run --auto-servernum --server-args='-screen 0 640x480x24:32' wine VRisingServer.exe -serverName Bloodheim -maxConnectedUsers 10 -persistentDataPath ${APP}/ -saveName server -logFile server.log
